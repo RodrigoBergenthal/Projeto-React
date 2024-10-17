@@ -1,27 +1,15 @@
-
+// App.js
+import Perfil from "./components/Perfil";
+import Formulario from "./components/Formulario";
 
 function App() {
-const nome = "Rodrigo"
-
-  function retornaNome (){
-    return nome
-  };
-
-  const pessoa = {
-    nome: "Maria"
-  };
-
-  let estaDeDia = true;
-
   return (
-    <div>
-      <h1>Olá, {pessoa.nome}</h1>
-    <h2> Subtitulo </h2>
-    {estaDeDia ? 'bom dia' : ' Boa Tarde'}
-    </div>
-    
-  )
-
+    <>
+      <Perfil nome="Rodrigo Bergenthal" endereco="https://github.com/rodrigobergenthal.png" />
+      <Formulario/>
+    </>
+  );
 }
 
-export default App
+export default App;
+
